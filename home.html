@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <title>Demo Barcelona AQ</title>
+      <link rel="stylesheet" href="../static/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Demo Previsión Calidad del Aire en Barcelona</h1>
+        <strong><nav>
+          <ul class="menu">
+
+            <h2>¿Quieres jugar a adivinar la calidad del aire en Barcelona?</h2>
+            <h3>Tan sólo tienes que introducir la fecha y la hora del día que quieras conocer</h3>
+
+            <h3>¿Te animas?</h3>
+            <form action="{{url_for('about')}}" method="POST">
+             <input title="Respeta el formato dd/mm/aa hh:mm" placeholder="Introduce la fecha"type="text" name="fecha_conocer" required>
+             <button type="Submit">Enviar</button>
+            </form>
+            <h4>(Por favor, utiliza el siguiente formato: dd/mm/aaaa hh:mm)</h4>
+          </ul>
+        </nav></strong>
+      </div>
+  </body>
+</html>

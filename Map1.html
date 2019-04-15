@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_bd1b45eef9a04285890d62bc496d06c2 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_bd1b45eef9a04285890d62bc496d06c2" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_bd1b45eef9a04285890d62bc496d06c2 = L.map(
+        'map_bd1b45eef9a04285890d62bc496d06c2', {
+        center: [41.3875, 2.16835],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_18945d4b2fff4fcfbd163b0d8056c923 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_bd1b45eef9a04285890d62bc496d06c2);
+    
+            var feature_group_5f31342138d44209a09ae42511dd01e9 = L.featureGroup(
+                ).addTo(map_bd1b45eef9a04285890d62bc496d06c2);
+        
+    
+            var circle_marker_cb272462391e4a3f854f89022cfa6e6b = L.circleMarker(
+                [41.3788, 2.1331],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_a207d05a85d6483989fda10f81679a56 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d4a7d3dc1229404e80716935586863cb = $(`<div id="html_d4a7d3dc1229404e80716935586863cb" style="width: 100.0%; height: 100.0%;">Barcelona - Sants Aire de  Calidad Buena</div>`)[0];
+                popup_a207d05a85d6483989fda10f81679a56.setContent(html_d4a7d3dc1229404e80716935586863cb);
+            
+
+            circle_marker_cb272462391e4a3f854f89022cfa6e6b.bindPopup(popup_a207d05a85d6483989fda10f81679a56)
+            ;
+
+            
+        
+    
+            var circle_marker_3d48fbf492324177bc7c50120832f815 = L.circleMarker(
+                [41.3853, 2.1538],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_448a20c40b0e419e84310130ef1b4503 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a2cfec01c52f4e159154d47e6851bc9e = $(`<div id="html_a2cfec01c52f4e159154d47e6851bc9e" style="width: 100.0%; height: 100.0%;">Barcelona - Eixample Aire de Calidad Moderada</div>`)[0];
+                popup_448a20c40b0e419e84310130ef1b4503.setContent(html_a2cfec01c52f4e159154d47e6851bc9e);
+            
+
+            circle_marker_3d48fbf492324177bc7c50120832f815.bindPopup(popup_448a20c40b0e419e84310130ef1b4503)
+            ;
+
+            
+        
+    
+            var circle_marker_9627ce44e5944c9c93a561360a1331bb = L.circleMarker(
+                [41.3987, 2.1534],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_2459961f2ade4644aed7265242ea24cd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2b6dcb4b20b745a395f725d7fdaa93a1 = $(`<div id="html_2b6dcb4b20b745a395f725d7fdaa93a1" style="width: 100.0%; height: 100.0%;">Barcelona - Gràcia Aire de  Calidad Buena</div>`)[0];
+                popup_2459961f2ade4644aed7265242ea24cd.setContent(html_2b6dcb4b20b745a395f725d7fdaa93a1);
+            
+
+            circle_marker_9627ce44e5944c9c93a561360a1331bb.bindPopup(popup_2459961f2ade4644aed7265242ea24cd)
+            ;
+
+            
+        
+    
+            var circle_marker_8a728d2d04a249f69f9a3d1aa1741c7e = L.circleMarker(
+                [41.3864, 2.1874],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_64bea12b24e0409e8cab51e08d75ed95 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81c34a44fb3740e98ee97d63c81a26cd = $(`<div id="html_81c34a44fb3740e98ee97d63c81a26cd" style="width: 100.0%; height: 100.0%;">Barcelona - Ciutadella Aire de  Calidad Buena</div>`)[0];
+                popup_64bea12b24e0409e8cab51e08d75ed95.setContent(html_81c34a44fb3740e98ee97d63c81a26cd);
+            
+
+            circle_marker_8a728d2d04a249f69f9a3d1aa1741c7e.bindPopup(popup_64bea12b24e0409e8cab51e08d75ed95)
+            ;
+
+            
+        
+    
+            var circle_marker_eb9bfb9151c64c2f84429bc5cdfe7281 = L.circleMarker(
+                [41.4261, 2.148],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_a68d0fbcb6eb49299d184c48a7c4902d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_760183267e474468af82897d60ca4d2c = $(`<div id="html_760183267e474468af82897d60ca4d2c" style="width: 100.0%; height: 100.0%;">Barcelona - Vall Hebron Aire de  Calidad Buena</div>`)[0];
+                popup_a68d0fbcb6eb49299d184c48a7c4902d.setContent(html_760183267e474468af82897d60ca4d2c);
+            
+
+            circle_marker_eb9bfb9151c64c2f84429bc5cdfe7281.bindPopup(popup_a68d0fbcb6eb49299d184c48a7c4902d)
+            ;
+
+            
+        
+    
+            var circle_marker_d5b3019677a34c92b110f29c98c26892 = L.circleMarker(
+                [41.3875, 2.1151],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_e679f1156b7747e3b06b871d2d92390d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2cd31dbe7c8f42aeaccb73c74bfb594b = $(`<div id="html_2cd31dbe7c8f42aeaccb73c74bfb594b" style="width: 100.0%; height: 100.0%;">Barcelona - Palau Reial Aire de  Calidad Buena</div>`)[0];
+                popup_e679f1156b7747e3b06b871d2d92390d.setContent(html_2cd31dbe7c8f42aeaccb73c74bfb594b);
+            
+
+            circle_marker_d5b3019677a34c92b110f29c98c26892.bindPopup(popup_e679f1156b7747e3b06b871d2d92390d)
+            ;
+
+            
+        
+    
+            var circle_marker_a3d4b73813344a04b5ad8886b20e1935 = L.circleMarker(
+                [41.4039, 2.2045],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_d2eeedffaf394d8bb247ec1dc55fab95 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e6e8796e5cfd47dea265d5fa583f6a97 = $(`<div id="html_e6e8796e5cfd47dea265d5fa583f6a97" style="width: 100.0%; height: 100.0%;">Barcelona - Poblenou Aire de  Calidad Buena</div>`)[0];
+                popup_d2eeedffaf394d8bb247ec1dc55fab95.setContent(html_e6e8796e5cfd47dea265d5fa583f6a97);
+            
+
+            circle_marker_a3d4b73813344a04b5ad8886b20e1935.bindPopup(popup_d2eeedffaf394d8bb247ec1dc55fab95)
+            ;
+
+            
+        
+    
+            var circle_marker_e54ecdee237845058055e0863c114569 = L.circleMarker(
+                [41.4183, 2.1239],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.5,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_5f31342138d44209a09ae42511dd01e9);
+            
+    
+            var popup_7a7751da7c154fe5ae636c717d0e0809 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aca115cc69334b01a002eab7221a22cb = $(`<div id="html_aca115cc69334b01a002eab7221a22cb" style="width: 100.0%; height: 100.0%;">Barcelona - Observ Fabra Aire de  Calidad Buena</div>`)[0];
+                popup_7a7751da7c154fe5ae636c717d0e0809.setContent(html_aca115cc69334b01a002eab7221a22cb);
+            
+
+            circle_marker_e54ecdee237845058055e0863c114569.bindPopup(popup_7a7751da7c154fe5ae636c717d0e0809)
+            ;
+
+            
+        
+</script>
